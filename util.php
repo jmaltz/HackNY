@@ -21,7 +21,7 @@
 
 	function get_closest_election()
 	{
-		$api_key = 'AIzaSyCFB5YCbPpvcKxIVszn-XaUuQljGdhJLdo';
+		$api_key = $GOOGLE_API_KEY;
 		$address_to_query = 'https://www.googleapis.com/civicinfo/us_v1/elections';
 		$api_to_hit = $address_to_query . '?key=' . $api_key;
 
