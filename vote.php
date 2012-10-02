@@ -1,6 +1,8 @@
 <?php
 	include 'php-sdk/src/temboo.php';
 	include 'util.php';
+	include 'configuration.php';
+
 
 	$session = new Temboo_Session($TEMBOO_USERNAME, $TEMBOO_APP_NAME, $TEMBOO_APP_KEY);
 	$sendSMS = new Twilio_SendSMS($session);
